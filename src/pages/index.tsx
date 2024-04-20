@@ -1,13 +1,6 @@
 import {signIn, signOut, useSession} from 'next-auth/react';
 import Head from 'next/head';
 
-import {Inter} from 'next/font/google';
-
-const inter = Inter({
-	subsets: ['latin'],
-	variable: '--font-sans',
-});
-
 export default function Home() {
 	return (
 		<>
@@ -16,11 +9,10 @@ export default function Home() {
 				<meta name="description" content="Util app for the Spark RPG system"/>
 				<link rel="icon" href="/favicon.ico"/>
 			</Head>
+
 			<header>Header</header>
 			<main>
-				<main className={`font-sans ${inter.variable}`}>
-					<AuthShowcase/>
-				</main>
+				<AuthShowcase/>
 			</main>
 			<footer>Footer</footer>
 		</>
