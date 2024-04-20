@@ -16,13 +16,13 @@ export default function Home() {
 				<meta name="description" content="Util app for the Spark RPG system"/>
 				<link rel="icon" href="/favicon.ico"/>
 			</Head>
-			<header></header>
+			<header>Header</header>
 			<main>
 				<main className={`font-sans ${inter.variable}`}>
 					<AuthShowcase/>
 				</main>
 			</main>
-			<footer></footer>
+			<footer>Footer</footer>
 		</>
 	);
 }
